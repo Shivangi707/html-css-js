@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+    .wrap{
+        width: 500px;
+        height:850px;
+        margin: 30px auto;
+        background-image: url('image.jpg');
+        background-size:cover;
+        position:relative;
+    }
+    h1{
+        padding-top: 0;
+        font-size: 25px;
+        color:white;
+        text-align: center;
+    }
+    table{
+        font-size: 50;
+        color:white;
+    }
+    .txt{
+        width: 400px;
+        height:25px;
+        border-radius:5px;
+    }
+    .text{
+        width: 400px;
+        height: 80px;
+        border-radius:5px;
+    }
+    .btn{
+        width: 410px;
+        height:30px;
+        background-color: green;
+        border-radius:5px;
+    }
+    .childWrap{
+        width:450px ;
+        height: 750px ;
+        background-color:purple;
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        font-size: 15px;
+    }
+    </style>
+</head>
+<body>
+    <div class ="wrap">
+        <h1>Feedback form</h1>
+        <div class="childWrap">
+        <table >
+            <form action="" method="">
+                <tr>
+                    <td>
+                        <lable>Name</lable><br>
+                        <input type="text" id="text" required=""placeholder="Enter your name" class="txt">
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Email</lable><br>
+                        <input type="text" id="text" required=""placeholder="Enter your Email"class="txt">
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Age(optional)</lable><br>
+                        <input type="number" id="text" required=""placeholder="Age" class="txt">
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Which option best describes your current role?<br></lable>
+                        <select class="txt">
+                            <option value="Select current role">Select current role</optiton>
+                            <option value ="Student">Student</option>
+                            <option value ="Full time job">Full time job</option>
+                            <option value ="Full time learner">Full time learner</option>
+                        </select>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Would you recommend enquero to a friend?</lable><br>
+                        <input type="radio" name="recommend" value="Definitely" checked>Definitely<br>
+                        <input type="radio" name="recommend" value="May be">Maybe<br>
+                        <input type="radio" name="recommend" value="Not sure">Not sure<br>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>What do you like about enquero?</lable><br>
+                        <select class="txt">
+                            <option value="Select an option">Select an option</option>
+                            <option value="Great work culture">Great work culture</option>
+                            <option value="opportunity to learn">Opportunity to learn</option>
+                            <option value="employee friendly">Employee friendly</option>
+                        </select>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>What do you like to see improved?  (check all that apply)</lable><br>
+                        <input type="checkbox" >Front-end Projects <br>
+                        <input type="checkbox"  >Back-end projects<br>
+                        <input type="checkbox" >Data Visualization<br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Any comments or suggestions?</lable><br>
+                        <input type="text area" required=""placeholder="Enter your comment here..."class="text"></input>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="submit" class="btn">Submit</button></td>
+                </tr>
+
+            </form>
+        </table>
+        </div>
+    </div>
+</body>
+</html>
